@@ -1,0 +1,16 @@
+server:
+  port: 8010
+spring:
+  application:
+    # 指定注册到eureka server上的服务名称
+    name: springboot-middleware-rocketmq
+
+rocketmq:
+  name-server: 172.26.xxx.24:9876;172.26.xxx.25:9876
+  producer:
+      group: producerGroup1
+      retry-times-when-send-failed: 2
+      retry-times-when-send-async-failed: 0
+      send-message-timeout: 300000
+      max-message-size: 4194304
+      retry-next-server: false
