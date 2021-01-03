@@ -1,0 +1,12 @@
+server:
+  port: 8000
+spring:
+  application:
+    name: springboot-rocketmq-demo-produce
+rocketmq:
+
+  # rocketmq地址
+  name-server: 127.0.0.1:9876
+  producer:
+    # 必须填写 group
+    group: test-group

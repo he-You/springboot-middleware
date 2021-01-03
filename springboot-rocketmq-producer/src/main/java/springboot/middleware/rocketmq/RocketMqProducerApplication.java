@@ -8,8 +8,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @date 2021/1/2 下午10:36
  */
 @SpringBootApplication
-public class RocketMqApplication {
+public class RocketMqProducerApplication {
     public static void main(String[] args) {
-        SpringApplication.run(RocketMqApplication.class,args);
+        SpringApplication.run(RocketMqProducerApplication.class, args);
     }
 }
